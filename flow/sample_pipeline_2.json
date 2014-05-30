@@ -1,0 +1,151 @@
+{
+    "desc": "",
+    "description": "",
+    "globals": "",
+    "name": "Sample Pipeline 2",
+    "phases": [
+        {
+            "desc": "",
+            "name": "Phase Sample 1",
+            "stages": {
+                "Stage Sample 1": {
+                    "description": "",
+                    "name": "Stage Sample 1",
+                    "steps": [
+                        {
+                            "name": "Step 1",
+                            "plugin": {
+                                "args": {
+                                    "value1": "abcdef",
+                                    "value2": "123456",
+                                    "value3": "qwerty"
+                                },
+                                "method": "sample_job1",
+                                "module": "example",
+                                "name": "sample"
+                            }
+                        },
+                        {
+                            "name": "Step 2",
+                            "plugin": {
+                                "args": {},
+                                "method": "sample_job2",
+                                "module": "example",
+                                "name": "sample"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "desc": "",
+            "name": "Phase Sample 2",
+            "stages": {
+                "Stage Sample 1": {
+                    "description": "",
+                    "name": "Stage Sample 1",
+                    "steps": [
+                        {
+                            "name": "Step 1",
+                            "plugin": {
+                                "args": {
+                                    "value1": "abcdef",
+                                    "value2": "123456",
+                                    "value3": "qwerty"
+                                },
+                                "method": "sample_job1",
+                                "module": "example",
+                                "name": "sample"
+                            }
+                        },
+                        {
+                            "name": "Step 2",
+                            "plugin": {
+                                "args": {},
+                                "method": "sample_job2",
+                                "module": "example",
+                                "name": "sample"
+                            }
+                        }
+                    ]
+                },
+                "Stage Sample 2": {
+                    "description": "",
+                    "ingate": {
+                        "text": "Should we continue on with this process?",
+                        "title": "Proceed?",
+                        "type": "ui-prompt"
+                    },
+                    "name": "Stage Sample 2",
+                    "outgate": {
+                        "text": "Proceed with the process?",
+                        "title": "Proceed?",
+                        "type": "ui-prompt"
+                    },
+                    "steps": [
+                        {
+                            "name": "Step 1",
+                            "plugin": {
+                                "args": {
+                                    "value1": "abcdef",
+                                    "value2": "123456",
+                                    "value3": "qwerty"
+                                },
+                                "method": "sample_job1",
+                                "module": "example",
+                                "name": "sample"
+                            }
+                        },
+                        {
+                            "name": "Step 2",
+                            "plugin": {
+                                "args": {},
+                                "method": "sample_job2",
+                                "module": "example",
+                                "name": "sample"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "desc": "",
+            "name": "Phase Sample 3",
+            "stages": {
+                "Stage Sample 1": {
+                    "description": "",
+                    "name": "Stage Sample 1",
+                    "steps": [
+                        {
+                            "name": "Step 1",
+                            "plugin": {
+                                "args": {
+                                    "value1": "abcdef",
+                                    "value2": "123456",
+                                    "value3": "qwerty"
+                                },
+                                "method": "sample_job1",
+                                "module": "example",
+                                "name": "sample"
+                            }
+                        },
+                        {
+                            "name": "Step 2",
+                            "plugin": {
+                                "args": {},
+                                "method": "sample_job2",
+                                "module": "example",
+                                "name": "sample"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "signature": "",
+    "signature_type": "",
+    "warnings": []
+}
